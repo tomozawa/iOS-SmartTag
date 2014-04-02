@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5019C4E1740A6FD00F3FD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5019C4D1740A6FD00F3FD1A /* Foundation.framework */; };
+		E501A40B1740A74900F3FD1A /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D4B1740A74600F3FD1A /* Bluetooth.m */; };
+		E501A40C1740A74900F3FD1A /* BluetoothHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D4E1740A74600F3FD1A /* BluetoothHandle.m */; };
+		E501A40D1740A74900F3FD1A /* nfc110_ble_um.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D4F1740A74600F3FD1A /* nfc110_ble_um.m */; };
+		E501A40E1740A74900F3FD1A /* Semaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = E5019D511740A74600F3FD1A /* Semaphore.m */; };
+		E501A4111740A74900F3FD1A /* utl_rand.c in Sources */ = {isa = PBXBuildFile; fileRef = E5019D5B1740A74600F3FD1A /* utl_rand.c */; };
+		E501A4121740A74900F3FD1A /* utl_sleep.c in Sources */ = {isa = PBXBuildFile; fileRef = E5019D5C1740A74600F3FD1A /* utl_sleep.c */; };
+		E501A4131740A74900F3FD1A /* utl_time.c in Sources */ = {isa = PBXBuildFile; fileRef = E5019D5D1740A74600F3FD1A /* utl_time.c */; };
+		E501A5331740A8C800F3FD1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E501A5321740A8C800F3FD1A /* CoreBluetooth.framework */; };
+		E53B379117FE48A4003A9147 /* nfc110.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B36FC17FE48A4003A9147 /* nfc110.c */; };
+		E53B379217FE48A4003A9147 /* nfc110_ble.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B36FD17FE48A4003A9147 /* nfc110_ble.c */; };
+		E53B379817FE48A4003A9147 /* felica_cc.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B370617FE48A4003A9147 /* felica_cc.c */; };
+		E53B379A17FE48A4003A9147 /* felica_cc_stub_nfc110.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B370B17FE48A4003A9147 /* felica_cc_stub_nfc110.c */; };
+		E53B37C117FE48A4003A9147 /* utl_snprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B378A17FE48A4003A9147 /* utl_snprintf.c */; };
+		E53B37C217FE48A4003A9147 /* utl_string.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B378B17FE48A4003A9147 /* utl_string.c */; };
+		E53B37C317FE48A4003A9147 /* utl_timeout.c in Sources */ = {isa = PBXBuildFile; fileRef = E53B378C17FE48A4003A9147 /* utl_timeout.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5019C481740A6FD00F3FD1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D41A593181E1CBA0070169D /* felica-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "felica-Prefix.pch"; path = "felica/felica-Prefix.pch"; sourceTree = "<group>"; };
+		E5019C4A1740A6FD00F3FD1A /* libfelica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfelica.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5019C4D1740A6FD00F3FD1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E5019D491740A74600F3FD1A /* blelog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blelog.h; sourceTree = "<group>"; };
+		E5019D4A1740A74600F3FD1A /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		E5019D4B1740A74600F3FD1A /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		E5019D4D1740A74600F3FD1A /* BluetoothHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothHandle.h; sourceTree = "<group>"; };
+		E5019D4E1740A74600F3FD1A /* BluetoothHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothHandle.m; sourceTree = "<group>"; };
+		E5019D4F1740A74600F3FD1A /* nfc110_ble_um.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nfc110_ble_um.m; sourceTree = "<group>"; };
+		E5019D501740A74600F3FD1A /* Semaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Semaphore.h; sourceTree = "<group>"; };
+		E5019D511740A74600F3FD1A /* Semaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Semaphore.m; sourceTree = "<group>"; };
+		E5019D531740A74600F3FD1A /* arch_ics_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arch_ics_types.h; sourceTree = "<group>"; };
+		E5019D541740A74600F3FD1A /* arch_icslog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arch_icslog.h; sourceTree = "<group>"; };
+		E5019D551740A74600F3FD1A /* arch_utl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arch_utl.h; sourceTree = "<group>"; };
+		E5019D5B1740A74600F3FD1A /* utl_rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_rand.c; sourceTree = "<group>"; };
+		E5019D5C1740A74600F3FD1A /* utl_sleep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_sleep.c; sourceTree = "<group>"; };
+		E5019D5D1740A74600F3FD1A /* utl_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_time.c; sourceTree = "<group>"; };
+		E501A5321740A8C800F3FD1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E53B36FC17FE48A4003A9147 /* nfc110.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nfc110.c; sourceTree = "<group>"; };
+		E53B36FD17FE48A4003A9147 /* nfc110_ble.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nfc110_ble.c; sourceTree = "<group>"; };
+		E53B370617FE48A4003A9147 /* felica_cc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = felica_cc.c; sourceTree = "<group>"; };
+		E53B370B17FE48A4003A9147 /* felica_cc_stub_nfc110.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = felica_cc_stub_nfc110.c; sourceTree = "<group>"; };
+		E53B370F17FE48A4003A9147 /* felica_card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = felica_card.h; sourceTree = "<group>"; };
+		E53B371017FE48A4003A9147 /* felica_cc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = felica_cc.h; sourceTree = "<group>"; };
+		E53B371117FE48A4003A9147 /* felica_cc_stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = felica_cc_stub.h; sourceTree = "<group>"; };
+		E53B371217FE48A4003A9147 /* ics_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ics_error.h; sourceTree = "<group>"; };
+		E53B371317FE48A4003A9147 /* ics_hwdev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ics_hwdev.h; sourceTree = "<group>"; };
+		E53B371417FE48A4003A9147 /* ics_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ics_types.h; sourceTree = "<group>"; };
+		E53B371517FE48A4003A9147 /* icsdrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icsdrv.h; sourceTree = "<group>"; };
+		E53B371717FE48A4003A9147 /* icslib_chk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icslib_chk.h; sourceTree = "<group>"; };
+		E53B371817FE48A4003A9147 /* icslog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icslog.h; sourceTree = "<group>"; };
+		E53B372117FE48A4003A9147 /* nfc110.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nfc110.h; sourceTree = "<group>"; };
+		E53B372217FE48A4003A9147 /* nfc110_ble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nfc110_ble.h; sourceTree = "<group>"; };
+		E53B372317FE48A4003A9147 /* nfc110_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nfc110_internal.h; sourceTree = "<group>"; };
+		E53B372B17FE48A4003A9147 /* felica_cc_stub_nfc110.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = felica_cc_stub_nfc110.h; sourceTree = "<group>"; };
+		E53B373A17FE48A4003A9147 /* utl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utl.h; sourceTree = "<group>"; };
+		E53B378A17FE48A4003A9147 /* utl_snprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_snprintf.c; sourceTree = "<group>"; };
+		E53B378B17FE48A4003A9147 /* utl_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_string.c; sourceTree = "<group>"; };
+		E53B378C17FE48A4003A9147 /* utl_timeout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utl_timeout.c; sourceTree = "<group>"; };
+		E5A0EB7E178A6AB600FC2C65 /* BluetoothDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothDefines.h; sourceTree = "<group>"; };
+		E5A0EB7F178A6ABF00FC2C65 /* BluetoothInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothInternal.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5019C471740A6FD00F3FD1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E501A5331740A8C800F3FD1A /* CoreBluetooth.framework in Frameworks */,
+				E5019C4E1740A6FD00F3FD1A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D41A591181E1C9A0070169D /* felica */ = {
+			isa = PBXGroup;
+			children = (
+				8D41A592181E1CAA0070169D /* Supporting Files */,
+			);
+			name = felica;
+			sourceTree = "<group>";
+		};
+		8D41A592181E1CAA0070169D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D41A593181E1CBA0070169D /* felica-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5019C3F1740A6FD00F3FD1A = {
+			isa = PBXGroup;
+			children = (
+				E5019CBD1740A74600F3FD1A /* src */,
+				8D41A591181E1C9A0070169D /* felica */,
+				E5019C4C1740A6FD00F3FD1A /* Frameworks */,
+				E5019C4B1740A6FD00F3FD1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5019C4B1740A6FD00F3FD1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5019C4A1740A6FD00F3FD1A /* libfelica.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5019C4C1740A6FD00F3FD1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E501A5321740A8C800F3FD1A /* CoreBluetooth.framework */,
+				E5019C4D1740A6FD00F3FD1A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5019CBD1740A74600F3FD1A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E5019CBE1740A74600F3FD1A /* arch */,
+				E53B36F417FE48A4003A9147 /* common */,
+			);
+			name = src;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		E5019CBE1740A74600F3FD1A /* arch */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D3D1740A74600F3FD1A /* ios */,
+			);
+			path = arch;
+			sourceTree = "<group>";
+		};
+		E5019D3D1740A74600F3FD1A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D471740A74600F3FD1A /* driver */,
+				E5019D521740A74600F3FD1A /* include */,
+				E5019D5A1740A74600F3FD1A /* utl */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		E5019D471740A74600F3FD1A /* driver */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D481740A74600F3FD1A /* nfc110_ble */,
+			);
+			path = driver;
+			sourceTree = "<group>";
+		};
+		E5019D481740A74600F3FD1A /* nfc110_ble */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D491740A74600F3FD1A /* blelog.h */,
+				E5019D4A1740A74600F3FD1A /* Bluetooth.h */,
+				E5019D4B1740A74600F3FD1A /* Bluetooth.m */,
+				E5A0EB7E178A6AB600FC2C65 /* BluetoothDefines.h */,
+				E5019D4D1740A74600F3FD1A /* BluetoothHandle.h */,
+				E5019D4E1740A74600F3FD1A /* BluetoothHandle.m */,
+				E5A0EB7F178A6ABF00FC2C65 /* BluetoothInternal.h */,
+				E5019D4F1740A74600F3FD1A /* nfc110_ble_um.m */,
+				E5019D501740A74600F3FD1A /* Semaphore.h */,
+				E5019D511740A74600F3FD1A /* Semaphore.m */,
+			);
+			path = nfc110_ble;
+			sourceTree = "<group>";
+		};
+		E5019D521740A74600F3FD1A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D531740A74600F3FD1A /* arch_ics_types.h */,
+				E5019D541740A74600F3FD1A /* arch_icslog.h */,
+				E5019D551740A74600F3FD1A /* arch_utl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E5019D5A1740A74600F3FD1A /* utl */ = {
+			isa = PBXGroup;
+			children = (
+				E5019D5B1740A74600F3FD1A /* utl_rand.c */,
+				E5019D5C1740A74600F3FD1A /* utl_sleep.c */,
+				E5019D5D1740A74600F3FD1A /* utl_time.c */,
+			);
+			path = utl;
+			sourceTree = "<group>";
+		};
+		E53B36F417FE48A4003A9147 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E53B36F517FE48A4003A9147 /* device */,
+				E53B370417FE48A4003A9147 /* felica */,
+				E53B370E17FE48A4003A9147 /* include */,
+				E53B378917FE48A4003A9147 /* utl */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E53B36F517FE48A4003A9147 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				E53B36FB17FE48A4003A9147 /* nfc110 */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		E53B36FB17FE48A4003A9147 /* nfc110 */ = {
+			isa = PBXGroup;
+			children = (
+				E53B36FC17FE48A4003A9147 /* nfc110.c */,
+				E53B36FD17FE48A4003A9147 /* nfc110_ble.c */,
+			);
+			path = nfc110;
+			sourceTree = "<group>";
+		};
+		E53B370417FE48A4003A9147 /* felica */ = {
+			isa = PBXGroup;
+			children = (
+				E53B370517FE48A4003A9147 /* command */,
+			);
+			path = felica;
+			sourceTree = "<group>";
+		};
+		E53B370517FE48A4003A9147 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				E53B370617FE48A4003A9147 /* felica_cc.c */,
+				E53B370717FE48A4003A9147 /* stub */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		E53B370717FE48A4003A9147 /* stub */ = {
+			isa = PBXGroup;
+			children = (
+				E53B370A17FE48A4003A9147 /* nfc110 */,
+			);
+			path = stub;
+			sourceTree = "<group>";
+		};
+		E53B370A17FE48A4003A9147 /* nfc110 */ = {
+			isa = PBXGroup;
+			children = (
+				E53B370B17FE48A4003A9147 /* felica_cc_stub_nfc110.c */,
+			);
+			path = nfc110;
+			sourceTree = "<group>";
+		};
+		E53B370E17FE48A4003A9147 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E53B370F17FE48A4003A9147 /* felica_card.h */,
+				E53B371017FE48A4003A9147 /* felica_cc.h */,
+				E53B371117FE48A4003A9147 /* felica_cc_stub.h */,
+				E53B371217FE48A4003A9147 /* ics_error.h */,
+				E53B371317FE48A4003A9147 /* ics_hwdev.h */,
+				E53B371417FE48A4003A9147 /* ics_types.h */,
+				E53B371517FE48A4003A9147 /* icsdrv.h */,
+				E53B371717FE48A4003A9147 /* icslib_chk.h */,
+				E53B371817FE48A4003A9147 /* icslog.h */,
+				E53B372117FE48A4003A9147 /* nfc110.h */,
+				E53B372217FE48A4003A9147 /* nfc110_ble.h */,
+				E53B372317FE48A4003A9147 /* nfc110_internal.h */,
+				E53B372917FE48A4003A9147 /* stub */,
+				E53B373A17FE48A4003A9147 /* utl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E53B372917FE48A4003A9147 /* stub */ = {
+			isa = PBXGroup;
+			children = (
+				E53B372B17FE48A4003A9147 /* felica_cc_stub_nfc110.h */,
+			);
+			path = stub;
+			sourceTree = "<group>";
+		};
+		E53B378917FE48A4003A9147 /* utl */ = {
+			isa = PBXGroup;
+			children = (
+				E53B378A17FE48A4003A9147 /* utl_snprintf.c */,
+				E53B378B17FE48A4003A9147 /* utl_string.c */,
+				E53B378C17FE48A4003A9147 /* utl_timeout.c */,
+			);
+			path = utl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5019C491740A6FD00F3FD1A /* felica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5019C581740A6FD00F3FD1A /* Build configuration list for PBXNativeTarget "felica" */;
+			buildPhases = (
+				E5019C461740A6FD00F3FD1A /* Sources */,
+				E5019C471740A6FD00F3FD1A /* Frameworks */,
+				E5019C481740A6FD00F3FD1A /* CopyFiles */,
+				E53CDC4317FD5FE300B54D28 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = felica;
+			productName = nfc110_ble_um;
+			productReference = E5019C4A1740A6FD00F3FD1A /* libfelica.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5019C411740A6FD00F3FD1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = AirPaSoRi;
+			};
+			buildConfigurationList = E5019C441740A6FD00F3FD1A /* Build configuration list for PBXProject "felica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E5019C3F1740A6FD00F3FD1A;
+			productRefGroup = E5019C4B1740A6FD00F3FD1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5019C491740A6FD00F3FD1A /* felica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E53CDC4317FD5FE300B54D28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_DIR=${PROJECT_DIR}/..\n\nif [ ! -e ${OUTPUT_DIR} ]; then\n  mkdir -p ${OUTPUT_DIR}\nfi\n\ncp -fr ${BUILT_PRODUCTS_DIR}/${EXCUTABLE_NAME} ${OUTPUT_DIR}";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5019C461740A6FD00F3FD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E501A40B1740A74900F3FD1A /* Bluetooth.m in Sources */,
+				E501A40C1740A74900F3FD1A /* BluetoothHandle.m in Sources */,
+				E501A40D1740A74900F3FD1A /* nfc110_ble_um.m in Sources */,
+				E501A40E1740A74900F3FD1A /* Semaphore.m in Sources */,
+				E501A4111740A74900F3FD1A /* utl_rand.c in Sources */,
+				E501A4121740A74900F3FD1A /* utl_sleep.c in Sources */,
+				E501A4131740A74900F3FD1A /* utl_time.c in Sources */,
+				E53B379117FE48A4003A9147 /* nfc110.c in Sources */,
+				E53B379217FE48A4003A9147 /* nfc110_ble.c in Sources */,
+				E53B379817FE48A4003A9147 /* felica_cc.c in Sources */,
+				E53B379A17FE48A4003A9147 /* felica_cc_stub_nfc110.c in Sources */,
+				E53B37C117FE48A4003A9147 /* utl_snprintf.c in Sources */,
+				E53B37C217FE48A4003A9147 /* utl_string.c in Sources */,
+				E53B37C317FE48A4003A9147 /* utl_timeout.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E5019C561740A6FD00F3FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5019C571740A6FD00F3FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		E5019C591740A6FD00F3FD1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = "/tmp/$(TARGET_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "felica/felica-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"ICSLOG_LEVEL=1",
+					DBG_TIME,
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../../src/arch/ios/include\"",
+					"\"$(SRCROOT)/../../../../../src/common/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = felica;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5019C5A1740A6FD00F3FD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = "/tmp/$(TARGET_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "felica/felica-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../../src/arch/ios/include\"",
+					"\"$(SRCROOT)/../../../../../src/common/include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = felica;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5019C441740A6FD00F3FD1A /* Build configuration list for PBXProject "felica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5019C561740A6FD00F3FD1A /* Debug */,
+				E5019C571740A6FD00F3FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5019C581740A6FD00F3FD1A /* Build configuration list for PBXNativeTarget "felica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5019C591740A6FD00F3FD1A /* Debug */,
+				E5019C5A1740A6FD00F3FD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5019C411740A6FD00F3FD1A /* Project object */;
+}

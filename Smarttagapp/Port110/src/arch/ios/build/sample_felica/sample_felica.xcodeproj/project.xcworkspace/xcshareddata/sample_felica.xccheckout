@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F8E1C7FF-0DF6-4ED3-B6CC-AF8FAA47D16A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>sample_felica</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A48F48D-C1BD-4DB3-A546-883F853C7603</key>
+		<string>file:///Volumes/work/AIOISmartTag/RemoteRepositories/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Port110/src/arch/ios/build/sample_felica/sample_felica.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A48F48D-C1BD-4DB3-A546-883F853C7603</key>
+		<string>../../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file:///Volumes/work/AIOISmartTag/RemoteRepositories/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A48F48D-C1BD-4DB3-A546-883F853C7603</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A48F48D-C1BD-4DB3-A546-883F853C7603</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SmartTagApp_ts</string>
+		</dict>
+	</array>
+</dict>
+</plist>
